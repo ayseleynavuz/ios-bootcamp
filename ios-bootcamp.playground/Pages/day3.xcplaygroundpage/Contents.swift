@@ -211,17 +211,161 @@ class Ev{
 }
 
 
-class Saray{
+class Saray : Ev{
     var kuleSayisi : Int?
-    init(kuleSayisi: Int? = nil) {
+    init(kuleSayisi: Int? , pencereSayisi : Int?) {
         self.kuleSayisi = kuleSayisi
+        super.init(pencereSayisi: pencereSayisi)
     }
 }
 
 
-class Villa{
+class Villa : Ev{
     var garajVarMi : Bool?
-    init(garajVarMi: Bool?) {
+    init(garajVarMi: Bool?, pencereSayisi : Int?) {
         self.garajVarMi = garajVarMi
+        super.init(pencereSayisi: pencereSayisi)
     }
 }
+
+
+let topkapiSarayi = Saray(kuleSayisi: 5, pencereSayisi: 300)
+
+let bogazVilla = Villa(garajVarMi: true, pencereSayisi: 30)
+
+
+print(topkapiSarayi.kuleSayisi!)
+print(topkapiSarayi.pencereSayisi!)
+
+print(bogazVilla.garajVarMi!)
+print(bogazVilla.pencereSayisi!)
+
+
+
+//  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ OVERRIDE  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+class Hayvan {
+    func sesCikar() {
+        print("Sesim yok")
+    }
+}
+
+class Memeli : Hayvan {
+
+}
+
+class Kedi : Memeli {
+    override func sesCikar() {
+        print("Miyav miyav")
+    }
+}
+
+class Kopek : Memeli {
+    override func sesCikar() {
+        print("Hav hav")
+    }
+}
+
+let hayvan = Hayvan()
+let memeli = Memeli()
+let kedi = Kedi()
+let kopek = Kopek()
+
+
+hayvan.sesCikar()  // kalıtım yok, kendi fonksiyonunu çalıştırdı.
+memeli.sesCikar()  // kalıtım var, üst sınıfın fonksiyonunu çalıştırdı.
+kedi.sesCikar()    // kalıtım var, kendi metodunu çalıştırdı.
+kopek.sesCikar()   // kalıtım var, kendi metodunu çalıştırdı.
+
+
+
+
+// is : (Type Checking) Tip kontrolü için kullanılır.(javadaki instance of
+// metodu gibi)
+// as : (Upcasting ) bir tipi başka bir tipe dönüştürmek için kullanılır
+// as! : ( Force Downcasting ) bir tipi başka bir tipe dönüştürmek için
+// kullanılır. Dönüşüm sırasında başarısız olursa hata, başarılı ise değeri
+// dönüştürür.
+// as? : (For Optional downcasting) Dönüşüm sırasında optional bir veri
+// geliyorsa. Dönüşüm sırasında başarısız olursa nil , başarılı ise değeri
+// dönüştürür.
+
+
+// Upcasting : alt class üst classa dönüşmesi
+
+var ev = Saray(kuleSayisi: 3, pencereSayisi: 10) as Ev  // saray eve dönüştürülür, üst classa dönüşür
+
+// Downcasting : üst classın alt clasaa dönüşmesi
+
+var saray = Ev(pencereSayisi: 6) as? Saray  // ? ya da ! konulabilir
+
+// tip kontrolü
+
+if ev is Ev{ // bu nesne Ev 'den mi türedi kontrolü yapılıyor
+    print("nesne Ev sınıfındandır.")
+}else{
+    print("nesne Ev sınıfından değildir.")
+}
+
+
+//  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ PROTOCOL (INTERFACE)  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+// PROTOCOL (INTERFACE iki farklı sayfadan erişimler için kullanıyoruz
+
+
+// değişkenler ve metodlar tanımlanırken taslak olarak tanımlanıyorlar.
+
+protocol MyProtocol{
+    var degisken : Int{get set}  // get:değer atayabilirsin,  set: değer okuyabilirsin
+    func metod1()
+    func metod2() -> String
+}
+
+
+class ClassA : MyProtocol{  // , ile birden fazla protocol eklenebilir
+    // conform to protocol uyarısını not edin! ->  o classa protocol ekledik ama kullanılması gereken degisken ve metodları kullanmadık.
+    var degisken: Int = 10
+    
+    func metod1() {
+        print("metod1 çalıştı")
+    }
+    
+    func metod2() -> String {
+        return "metod2 çalıştı"
+    }
+    
+}
+
+var a = ClassA()
+print(a.degisken)
+a.metod1()
+print(a.metod2())
+
+
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ EXTENSION ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+// --> Kotlin dilinde -> infix fonksiyonu (androidde de var)
+// var olan yapılara özellik ekliyoruz
+// sistemde birçok class var ve biz kendimiz de bir şeyler yazabiliriz. Var olan sisteme extend edilebilir, katkıda bulunabiliriz.
+// yazdığımız classları daha modüler hale getirmek için extensionlar kullanılır.
+
+
+extension Int {
+    func carp(sayi : Int) -> Int{
+        return self * sayi       // self Int'i temsil ediyor, genişletmek istenen classı
+    }
+}
+let x = 3.carp(sayi: 5)
+print(x)
+
+
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ CLOSURE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+// fonksiyona benziyor
+
+var ifade = {
+    print("Closure kullanımı")
+}
+
+ifade()
