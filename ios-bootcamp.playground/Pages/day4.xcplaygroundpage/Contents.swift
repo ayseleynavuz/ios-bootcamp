@@ -164,3 +164,153 @@ print("Metinsel küçükten büyüğe sıralama")
 for o in s4 {
     print("No : \(o.no!) - Ad : \(o.ad!) - Sınıf : \(o.sinif!)")
 }
+
+
+
+//  ~ ~ ~ ~ ~  COLLECTIONS 2  ~ ~ ~ ~ ~
+//  Set - Dictionary - Guard - Do Try Catch
+
+
+// SET KULLANIMI
+
+var meyveler1 = Set<String>()
+meyveler1.insert("Elma")
+meyveler1.insert("Portakal")
+meyveler1.insert("Muz")
+
+print(meyveler1)    //sıraları karışık olacak
+
+meyveler1.insert("Elma")
+print(meyveler1)    //aynı veri tekrar eklenemez
+
+meyveler1.insert("Amasya Elma")
+print(meyveler1)
+
+for meyve in meyveler1 {
+    print("Sonuç 1 : \(meyve)")
+}
+
+for (indeks, meyve) in meyveler1.enumerated() {
+    print("\(indeks). -> \(meyve)")
+}
+
+print("Boyut: \(meyveler1.count)")
+print("Boş mu?: \(meyveler1.isEmpty)")
+
+
+
+// HASHMAP - MAP - DICTIONARY
+
+var iller = [Int:String]()  // Int -> key  |  String -> değer,value
+
+// Veri Ekleme
+iller[16] = "Bursa"
+iller[34] = "İstanbul"
+
+print(iller)
+
+// Veri Okuma
+print(iller[16]!)
+
+
+// Güncelleme
+iller[16] = "Yeni Bursa"
+print(iller)
+
+for (anahtar, deger) in iller {
+    print("Anahtar : \(anahtar) - Değer : \(deger)")
+}
+
+// Değer silme
+iller.removeValue(forKey: 16)
+print(iller)
+
+
+
+
+// * * * * * * * * * İLERİ SWIFT * * * * * * * * *
+// GUARD, EXCEPTION , DO - TRY - CATCH, THREAD
+
+// GUARD
+// if in tersi -> yani yanlışsa içeri girecek, false durumunda çalışacak.
+// bir fonksiyon içerisinde kullanılmak zorunda, fonksiyon olmadan çalışmaz.
+// hata yakalama için kolaylık sağlıyor
+
+
+
+// if ile örnek
+
+func kisiTanima(ad:String) {
+    if ad == "Ahmet" {
+        print("Merhaba Ahmet")
+    } else {
+        print("Tanınmayan kişi")
+    }
+}
+
+kisiTanima(ad: "Ahmet")
+
+// guard ile örnek
+
+func kisiTanimaGuard(ad:String) {
+    guard ad == "Ahmet" else {
+        print("Tanınmayan kişi")
+        return                  // return kelimesi bu fonksiyonun çalışmasını durdurur
+    }
+    
+    print("Merhaba Ahmet")
+}
+
+kisiTanimaGuard(ad: "Ahmetx")
+
+
+
+// HATA AYIKLAMA            //try-catch-throw
+
+// 1. compile error: editor hataları
+/*
+let x = 10
+x = 40 */
+
+// 2. runtime error - exception : çalışma sırasında oluşan hatalar, run edildiğinde uygulama çökerse alınan hata
+/*
+let sonuc = 10 / 0  -> sıfıra bölünmez
+*/
+
+
+enum Hatalar : Error {
+    case sifiraBolunmeHatasi
+}
+
+
+// try - catch kullanım
+//yapıyı sistem kendi oluşturuyor biz kullanmak zorunda kalıyoruz
+
+func bolme(sayi1:Int,sayi2:Int) throws -> Int {
+    if sayi2 == 0 {
+        throw Hatalar.sifiraBolunmeHatasi
+    }
+    return sayi1 / sayi2
+}
+
+
+// kullanım 1
+
+do{
+    let sonuc = try bolme(sayi1: 10, sayi2: 1)
+    print(sonuc)
+}catch  Hatalar.sifiraBolunmeHatasi{
+    print("Sayı sıfıra bölünemez.")
+}
+
+
+// kullanım 2
+
+let sonuc1 = try? bolme(sayi1: 10, sayi2: 1)  // eger hata olursa sonuc nil olur
+
+if let temp = sonuc1{
+    print(temp)
+    
+}else{
+    print("Sayı sıfıra bölünemez.")
+}
