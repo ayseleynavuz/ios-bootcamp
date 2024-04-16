@@ -7,31 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		847091BB2BCDC48000F6E27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091BA2BCDC48000F6E27D /* AppDelegate.swift */; };
-		847091BD2BCDC48000F6E27D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091BC2BCDC48000F6E27D /* SceneDelegate.swift */; };
-		847091BF2BCDC48000F6E27D /* AnasayfaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091BE2BCDC48000F6E27D /* AnasayfaVC.swift */; };
-		847091C22BCDC48000F6E27D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847091C12BCDC48000F6E27D /* Base */; };
-		847091C42BCDC48100F6E27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847091C32BCDC48100F6E27D /* Assets.xcassets */; };
-		847091C72BCDC48100F6E27D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847091C62BCDC48100F6E27D /* Base */; };
-		847091CF2BCDC63500F6E27D /* OyunEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091CE2BCDC63500F6E27D /* OyunEkraniVC.swift */; };
-		847091D12BCDC65A00F6E27D /* SonucEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091D02BCDC65A00F6E27D /* SonucEkraniVC.swift */; };
+		847091DF2BCDDF0C00F6E27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091DE2BCDDF0C00F6E27D /* AppDelegate.swift */; };
+		847091E12BCDDF0C00F6E27D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091E02BCDDF0C00F6E27D /* SceneDelegate.swift */; };
+		847091E32BCDDF0C00F6E27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091E22BCDDF0C00F6E27D /* ViewController.swift */; };
+		847091E62BCDDF0C00F6E27D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847091E52BCDDF0C00F6E27D /* Base */; };
+		847091E82BCDDF0D00F6E27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847091E72BCDDF0D00F6E27D /* Assets.xcassets */; };
+		847091EB2BCDDF0D00F6E27D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847091EA2BCDDF0D00F6E27D /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		847091B72BCDC48000F6E27D /* CalismaYapisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalismaYapisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		847091BA2BCDC48000F6E27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		847091BC2BCDC48000F6E27D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		847091BE2BCDC48000F6E27D /* AnasayfaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaVC.swift; sourceTree = "<group>"; };
-		847091C12BCDC48000F6E27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		847091C32BCDC48100F6E27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		847091C62BCDC48100F6E27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		847091C82BCDC48100F6E27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		847091CE2BCDC63500F6E27D /* OyunEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunEkraniVC.swift; sourceTree = "<group>"; };
-		847091D02BCDC65A00F6E27D /* SonucEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucEkraniVC.swift; sourceTree = "<group>"; };
+		847091DB2BCDDF0C00F6E27D /* odev3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = odev3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847091DE2BCDDF0C00F6E27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		847091E02BCDDF0C00F6E27D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		847091E22BCDDF0C00F6E27D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		847091E52BCDDF0C00F6E27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		847091E72BCDDF0D00F6E27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847091EA2BCDDF0D00F6E27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		847091EC2BCDDF0D00F6E27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		847091B42BCDC48000F6E27D /* Frameworks */ = {
+		847091D82BCDDF0C00F6E27D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,74 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		847091AE2BCDC48000F6E27D = {
+		847091D22BCDDF0C00F6E27D = {
 			isa = PBXGroup;
 			children = (
-				847091B92BCDC48000F6E27D /* CalismaYapisi */,
-				847091B82BCDC48000F6E27D /* Products */,
+				847091DD2BCDDF0C00F6E27D /* odev3 */,
+				847091DC2BCDDF0C00F6E27D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		847091B82BCDC48000F6E27D /* Products */ = {
+		847091DC2BCDDF0C00F6E27D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				847091B72BCDC48000F6E27D /* CalismaYapisi.app */,
+				847091DB2BCDDF0C00F6E27D /* odev3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		847091B92BCDC48000F6E27D /* CalismaYapisi */ = {
+		847091DD2BCDDF0C00F6E27D /* odev3 */ = {
 			isa = PBXGroup;
 			children = (
-				847091BA2BCDC48000F6E27D /* AppDelegate.swift */,
-				847091BC2BCDC48000F6E27D /* SceneDelegate.swift */,
-				847091BE2BCDC48000F6E27D /* AnasayfaVC.swift */,
-				847091CE2BCDC63500F6E27D /* OyunEkraniVC.swift */,
-				847091D02BCDC65A00F6E27D /* SonucEkraniVC.swift */,
-				847091C02BCDC48000F6E27D /* Main.storyboard */,
-				847091C32BCDC48100F6E27D /* Assets.xcassets */,
-				847091C52BCDC48100F6E27D /* LaunchScreen.storyboard */,
-				847091C82BCDC48100F6E27D /* Info.plist */,
+				847091DE2BCDDF0C00F6E27D /* AppDelegate.swift */,
+				847091E02BCDDF0C00F6E27D /* SceneDelegate.swift */,
+				847091E22BCDDF0C00F6E27D /* ViewController.swift */,
+				847091E42BCDDF0C00F6E27D /* Main.storyboard */,
+				847091E72BCDDF0D00F6E27D /* Assets.xcassets */,
+				847091E92BCDDF0D00F6E27D /* LaunchScreen.storyboard */,
+				847091EC2BCDDF0D00F6E27D /* Info.plist */,
 			);
-			path = CalismaYapisi;
+			path = odev3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		847091B62BCDC48000F6E27D /* CalismaYapisi */ = {
+		847091DA2BCDDF0C00F6E27D /* odev3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 847091CB2BCDC48100F6E27D /* Build configuration list for PBXNativeTarget "CalismaYapisi" */;
+			buildConfigurationList = 847091EF2BCDDF0D00F6E27D /* Build configuration list for PBXNativeTarget "odev3" */;
 			buildPhases = (
-				847091B32BCDC48000F6E27D /* Sources */,
-				847091B42BCDC48000F6E27D /* Frameworks */,
-				847091B52BCDC48000F6E27D /* Resources */,
+				847091D72BCDDF0C00F6E27D /* Sources */,
+				847091D82BCDDF0C00F6E27D /* Frameworks */,
+				847091D92BCDDF0C00F6E27D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CalismaYapisi;
-			productName = CalismaYapisi;
-			productReference = 847091B72BCDC48000F6E27D /* CalismaYapisi.app */;
+			name = odev3;
+			productName = odev3;
+			productReference = 847091DB2BCDDF0C00F6E27D /* odev3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		847091AF2BCDC48000F6E27D /* Project object */ = {
+		847091D32BCDDF0C00F6E27D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					847091B62BCDC48000F6E27D = {
+					847091DA2BCDDF0C00F6E27D = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = 847091B22BCDC48000F6E27D /* Build configuration list for PBXProject "CalismaYapisi" */;
+			buildConfigurationList = 847091D62BCDDF0C00F6E27D /* Build configuration list for PBXProject "odev3" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,57 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 847091AE2BCDC48000F6E27D;
-			productRefGroup = 847091B82BCDC48000F6E27D /* Products */;
+			mainGroup = 847091D22BCDDF0C00F6E27D;
+			productRefGroup = 847091DC2BCDDF0C00F6E27D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				847091B62BCDC48000F6E27D /* CalismaYapisi */,
+				847091DA2BCDDF0C00F6E27D /* odev3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		847091B52BCDC48000F6E27D /* Resources */ = {
+		847091D92BCDDF0C00F6E27D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847091C42BCDC48100F6E27D /* Assets.xcassets in Resources */,
-				847091C72BCDC48100F6E27D /* Base in Resources */,
-				847091C22BCDC48000F6E27D /* Base in Resources */,
+				847091E82BCDDF0D00F6E27D /* Assets.xcassets in Resources */,
+				847091EB2BCDDF0D00F6E27D /* Base in Resources */,
+				847091E62BCDDF0C00F6E27D /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		847091B32BCDC48000F6E27D /* Sources */ = {
+		847091D72BCDDF0C00F6E27D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847091D12BCDC65A00F6E27D /* SonucEkraniVC.swift in Sources */,
-				847091BF2BCDC48000F6E27D /* AnasayfaVC.swift in Sources */,
-				847091BB2BCDC48000F6E27D /* AppDelegate.swift in Sources */,
-				847091BD2BCDC48000F6E27D /* SceneDelegate.swift in Sources */,
-				847091CF2BCDC63500F6E27D /* OyunEkraniVC.swift in Sources */,
+				847091E32BCDDF0C00F6E27D /* ViewController.swift in Sources */,
+				847091DF2BCDDF0C00F6E27D /* AppDelegate.swift in Sources */,
+				847091E12BCDDF0C00F6E27D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		847091C02BCDC48000F6E27D /* Main.storyboard */ = {
+		847091E42BCDDF0C00F6E27D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				847091C12BCDC48000F6E27D /* Base */,
+				847091E52BCDDF0C00F6E27D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		847091C52BCDC48100F6E27D /* LaunchScreen.storyboard */ = {
+		847091E92BCDDF0D00F6E27D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				847091C62BCDC48100F6E27D /* Base */,
+				847091EA2BCDDF0D00F6E27D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		847091C92BCDC48100F6E27D /* Debug */ = {
+		847091ED2BCDDF0D00F6E27D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		847091CA2BCDC48100F6E27D /* Release */ = {
+		847091EE2BCDDF0D00F6E27D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +285,7 @@
 			};
 			name = Release;
 		};
-		847091CC2BCDC48100F6E27D /* Debug */ = {
+		847091F02BCDDF0D00F6E27D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -301,7 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CalismaYapisi/Info.plist;
+				INFOPLIST_FILE = odev3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.info.CalismaYapisi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.odev3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		847091CD2BCDC48100F6E27D /* Release */ = {
+		847091F12BCDDF0D00F6E27D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -328,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CalismaYapisi/Info.plist;
+				INFOPLIST_FILE = odev3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,7 +331,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.info.CalismaYapisi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.odev3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -350,25 +342,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		847091B22BCDC48000F6E27D /* Build configuration list for PBXProject "CalismaYapisi" */ = {
+		847091D62BCDDF0C00F6E27D /* Build configuration list for PBXProject "odev3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				847091C92BCDC48100F6E27D /* Debug */,
-				847091CA2BCDC48100F6E27D /* Release */,
+				847091ED2BCDDF0D00F6E27D /* Debug */,
+				847091EE2BCDDF0D00F6E27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		847091CB2BCDC48100F6E27D /* Build configuration list for PBXNativeTarget "CalismaYapisi" */ = {
+		847091EF2BCDDF0D00F6E27D /* Build configuration list for PBXNativeTarget "odev3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				847091CC2BCDC48100F6E27D /* Debug */,
-				847091CD2BCDC48100F6E27D /* Release */,
+				847091F02BCDDF0D00F6E27D /* Debug */,
+				847091F12BCDDF0D00F6E27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 847091AF2BCDC48000F6E27D /* Project object */;
+	rootObject = 847091D32BCDDF0C00F6E27D /* Project object */;
 }

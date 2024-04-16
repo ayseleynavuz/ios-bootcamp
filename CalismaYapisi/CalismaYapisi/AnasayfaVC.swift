@@ -7,13 +7,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class AnasayfaVC: UIViewController {
+    
+   
+    @IBOutlet weak var labelAnasayfa: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        labelAnasayfa.text = "Hosgeldin" // sayfa açıldığında text' e değer atanabilir.
     }
 
-
+  
+    @IBAction func buttonYap(_ sender: Any) {
+        labelAnasayfa.text = "Merhaba"  // butona tıklanınca ekranda yazacak text
+    }
+    
+    
+    
+    @IBAction func buttonBasla(_ sender: Any) {
+        performSegue(withIdentifier: "oyunEkraninaGecis", sender: nil)
+    }
+    
+    
+    
+    
 }
+
+
 
