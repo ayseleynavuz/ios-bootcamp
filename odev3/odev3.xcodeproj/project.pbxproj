@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8414AF5E2BCEFD4C008C5858 /* screenshot in Resources */ = {isa = PBXBuildFile; fileRef = 8414AF5D2BCEFD4C008C5858 /* screenshot */; };
 		847091DF2BCDDF0C00F6E27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091DE2BCDDF0C00F6E27D /* AppDelegate.swift */; };
 		847091E12BCDDF0C00F6E27D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091E02BCDDF0C00F6E27D /* SceneDelegate.swift */; };
 		847091E32BCDDF0C00F6E27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847091E22BCDDF0C00F6E27D /* ViewController.swift */; };
 		847091E62BCDDF0C00F6E27D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847091E52BCDDF0C00F6E27D /* Base */; };
 		847091E82BCDDF0D00F6E27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847091E72BCDDF0D00F6E27D /* Assets.xcassets */; };
 		847091EB2BCDDF0D00F6E27D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847091EA2BCDDF0D00F6E27D /* Base */; };
+		84E902012BCDF13000A39202 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E902002BCDF13000A39202 /* Poppins-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8414AF5D2BCEFD4C008C5858 /* screenshot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshot; sourceTree = "<group>"; };
 		847091DB2BCDDF0C00F6E27D /* odev3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = odev3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847091DE2BCDDF0C00F6E27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847091E02BCDDF0C00F6E27D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		847091E72BCDDF0D00F6E27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847091EA2BCDDF0D00F6E27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847091EC2BCDDF0D00F6E27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E902002BCDF13000A39202 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		847091DD2BCDDF0C00F6E27D /* odev3 */ = {
 			isa = PBXGroup;
 			children = (
+				8414AF5D2BCEFD4C008C5858 /* screenshot */,
 				847091DE2BCDDF0C00F6E27D /* AppDelegate.swift */,
 				847091E02BCDDF0C00F6E27D /* SceneDelegate.swift */,
 				847091E22BCDDF0C00F6E27D /* ViewController.swift */,
+				84E901FF2BCDEFF800A39202 /* Fonts */,
 				847091E42BCDDF0C00F6E27D /* Main.storyboard */,
 				847091E72BCDDF0D00F6E27D /* Assets.xcassets */,
 				847091E92BCDDF0D00F6E27D /* LaunchScreen.storyboard */,
 				847091EC2BCDDF0D00F6E27D /* Info.plist */,
 			);
 			path = odev3;
+			sourceTree = "<group>";
+		};
+		84E901FF2BCDEFF800A39202 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84E902002BCDF13000A39202 /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				847091E82BCDDF0D00F6E27D /* Assets.xcassets in Resources */,
+				8414AF5E2BCEFD4C008C5858 /* screenshot in Resources */,
 				847091EB2BCDDF0D00F6E27D /* Base in Resources */,
 				847091E62BCDDF0C00F6E27D /* Base in Resources */,
+				84E902012BCDF13000A39202 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

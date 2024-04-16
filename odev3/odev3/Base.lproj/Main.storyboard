@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,92 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="odev3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strawberry cake " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brk-Wn-vRP">
+                                <rect key="frame" x="110" y="456" width="188" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A delicious, fun, bright, and colourful Christmas jelly cake that makes the perfect no-bake dessert over the festive holidays" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUJ-Vn-wgU">
+                                <rect key="frame" x="34" y="513" width="354" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7t-fS-jBn">
+                                <rect key="frame" x="34" y="654" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIg-zn-UT4">
+                                <rect key="frame" x="304.5" y="652.5" width="40.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qt4-Hz-tFB">
+                                <rect key="frame" x="34" y="763" width="354" height="60"/>
+                                <color key="backgroundColor" name="btnColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4df-Sf-2tR"/>
+                                </constraints>
+                                <color key="tintColor" name="bgColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Order Now"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="bPI-os-6KO">
+                                <rect key="frame" x="-29.5" y="91" width="473" height="357"/>
+                                <color key="backgroundColor" name="bgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="357" id="FEM-Zi-ABd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="bgColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIg-zn-UT4" secondAttribute="trailing" constant="69" id="CJc-hx-9du"/>
+                            <constraint firstItem="bPI-os-6KO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="DYC-v1-mUj"/>
+                            <constraint firstItem="Brk-Wn-vRP" firstAttribute="top" secondItem="bPI-os-6KO" secondAttribute="bottom" constant="8" symbolic="YES" id="Ozc-X5-ysX"/>
+                            <constraint firstItem="uIg-zn-UT4" firstAttribute="centerY" secondItem="y7t-fS-jBn" secondAttribute="centerY" id="SKp-wp-hJh"/>
+                            <constraint firstItem="y7t-fS-jBn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="WVR-Uv-dqr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qt4-Hz-tFB" secondAttribute="bottom" constant="39" id="WnK-my-nBe"/>
+                            <constraint firstItem="IUJ-Vn-wgU" firstAttribute="top" secondItem="Brk-Wn-vRP" secondAttribute="bottom" constant="25" id="Wsm-kl-XYY"/>
+                            <constraint firstItem="qt4-Hz-tFB" firstAttribute="leading" secondItem="y7t-fS-jBn" secondAttribute="leading" id="YWb-Yv-4rq"/>
+                            <constraint firstItem="qt4-Hz-tFB" firstAttribute="trailing" secondItem="IUJ-Vn-wgU" secondAttribute="trailing" id="dcy-iE-2gX"/>
+                            <constraint firstItem="bPI-os-6KO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h2I-Ny-T4e"/>
+                            <constraint firstItem="bPI-os-6KO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-49.666666666666657" id="jbV-oQ-nXk"/>
+                            <constraint firstItem="IUJ-Vn-wgU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="jtU-j2-N2t"/>
+                            <constraint firstItem="Brk-Wn-vRP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="pAx-GH-rcm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IUJ-Vn-wgU" secondAttribute="trailing" constant="26" id="vIb-Q2-OrG"/>
+                            <constraint firstItem="qt4-Hz-tFB" firstAttribute="top" secondItem="y7t-fS-jBn" secondAttribute="bottom" constant="88" id="xeR-AH-ygn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="46.376811594202906" y="-2.6785714285714284"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="460" height="460"/>
+        <namedColor name="bgColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btnColor">
+            <color red="0.92500001192092896" green="0.58399999141693115" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.37599998712539673" green="0.37599998712539673" blue="0.37599998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
