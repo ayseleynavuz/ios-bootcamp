@@ -8,4 +8,4 @@
 - Derste gördüğümüz bütün aşamaları uygulayacağınız tek sayfalık tasarım yapınız.
   - AutoLayout-Align-Pin-Constraint-Çoklu Ekran Desteği-StackView
 
-<img src="https://github.com/ayseleynavuz/ios-bootcamp/blob/main/odev3/odev3/screenshot/Simulator%20Screenshot%20-%20iPhone%2011%20-%202024-04-16%20at%2021.57.23.png" width="414" height="896">
+<img src="https://github.com/ayseleynavuz/ios-bootcamp/blob/main/odev3/odev3/screenshot/Ekran%20Resmi%202024-04-16%2023.48.27.png" width="414" height="896">
