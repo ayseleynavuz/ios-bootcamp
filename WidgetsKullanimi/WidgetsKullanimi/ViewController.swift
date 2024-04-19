@@ -18,6 +18,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mSwitch: UISwitch!
     
+    @IBOutlet weak var labelSlider: UILabel!
+    
+    @IBOutlet weak var slider: UISlider!
+    
+    
+    @IBOutlet weak var labelStepper: UILabel!
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
+    
+    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -26,7 +39,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        labelSlider.text = String(Int(slider.value)) // sayfa yuklendiginde başlangıç değerini göstermesi için
+        labelStepper.text = String(Int(stepper.value))
+        indicator.isHidden = true // ilk çalıştıgında görünmez olması için
     }
 
     
@@ -74,15 +90,49 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func sliderDegisim(_ sender: UISlider) {
+        labelSlider.text = String(Int(sender.value))  // label'a değer aktarıyoruz, sender sayısal olduğu için string dönüşümü yapılıyor. Value : ondalıklı sayı verir.
+        // ondalıklı sayı string'e çevrildi ve label'a aktardık. Int dönüşü ile çözülür.
+    }
+    
+    
+    
+    @IBAction func stepperDegisim(_ sender: UIStepper) {
+        labelStepper.text = String(Int(sender.value))
+    }
+    
+
+    
+    @IBAction func buttonBasla(_ sender: Any) {
+        indicator.isHidden = false
+        indicator.startAnimating()
+    }
+    
+    
+    @IBAction func buttonDur(_ sender: Any) {
+        indicator.isHidden = true
+        indicator.stopAnimating()
+    }
+    
+    
+    
+    
+    
+    
+    
     @IBAction func buttonGoster(_ sender: Any) {
         
         print("Switch Durum: \(mSwitch.isOn)")
         
         let secilenIndeks = segmentedControl.selectedSegmentIndex
         let secilenKategori = segmentedControl.titleForSegment(at: secilenIndeks)
-        print("Seçim: \(secilenKategori!)")
+        print("Segmented Durum: \(secilenKategori!)")
+        
+        print("Slider Durum: \(slider.value)")
+        print("Stepper Durum: \(stepper.value)")
         
     }
+    
     
 }
 

@@ -228,6 +228,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="tzD-fM-GAE"/>
         <segue reference="fWP-bu-W70"/>
         <segue reference="BC1-BM-zrA"/>
     </inferredMetricsTieBreakers>
