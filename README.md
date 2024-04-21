@@ -4,8 +4,22 @@
 > course link : https://www.udemy.com/course/ios-bootcamp-program-swift
 
 
-# Ödev 3
-- Derste gördüğümüz bütün aşamaları uygulayacağınız tek sayfalık tasarım yapınız.
-  - AutoLayout-Align-Pin-Constraint-Çoklu Ekran Desteği-StackView
+# Odev 3
+-Create a one-page design structure in which you will apply all the steps we saw in the lesson.
+   - AutoLayout-Align-Pin-Constraint-Multiple Display Support-StackView
 
 <img src="https://github.com/ayseleynavuz/ios-bootcamp/blob/main/odev3/odev3/screenshot/Ekran%20Resmi%202024-04-16%2023.48.27.png" width="414" height="896">
+
+# Odev 4
+- Practical work for the page transitions we saw in the lesson
+<img src="https://github.com/ayseleynavuz/ios-bootcamp/blob/main/odev4/odev4/screenshot/sayfagecisi.png" width="500" height="500">
+
+# Odev 5
+- Simple calculator design and coding
+- medium article link:  : https://medium.com/@ayseleynavuz/calculator-app-auto-layout-in-storyboard-31c9d3588e01
+<img src="https://github.com/ayseleynavuz/ios-bootcamp/blob/main/odev5/odev5/screenshot/Simulator%20Screenshot%20-%20iPhone%2011%20-%202024-04-21%20at%2014.49.47.png" width="414" height="896">
+
+https://github.com/ayseleynavuz/ios-bootcamp/assets/58444323/f0056e22-a9b9-4631-a5e2-1554ba13916d
+
+
+
