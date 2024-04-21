@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844CA3622BD5595600030147 /* screenshot in Resources */ = {isa = PBXBuildFile; fileRef = 844CA3612BD5595600030147 /* screenshot */; };
 		84C1E9F22BD2A4FE00B2F87B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E9F12BD2A4FE00B2F87B /* AppDelegate.swift */; };
 		84C1E9F42BD2A4FE00B2F87B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E9F32BD2A4FE00B2F87B /* SceneDelegate.swift */; };
 		84C1E9F62BD2A4FE00B2F87B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E9F52BD2A4FE00B2F87B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		844CA3612BD5595600030147 /* screenshot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshot; sourceTree = "<group>"; };
 		84C1E9EE2BD2A4FE00B2F87B /* odev5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = odev5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C1E9F12BD2A4FE00B2F87B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C1E9F32BD2A4FE00B2F87B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		84C1E9F02BD2A4FE00B2F87B /* odev5 */ = {
 			isa = PBXGroup;
 			children = (
+				844CA3612BD5595600030147 /* screenshot */,
 				84C1E9F12BD2A4FE00B2F87B /* AppDelegate.swift */,
 				84C1E9F32BD2A4FE00B2F87B /* SceneDelegate.swift */,
 				84C1E9F52BD2A4FE00B2F87B /* ViewController.swift */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844CA3622BD5595600030147 /* screenshot in Resources */,
 				84C1E9FB2BD2A4FF00B2F87B /* Assets.xcassets in Resources */,
 				84C1E9FE2BD2A4FF00B2F87B /* Base in Resources */,
 				84C1E9F92BD2A4FE00B2F87B /* Base in Resources */,
