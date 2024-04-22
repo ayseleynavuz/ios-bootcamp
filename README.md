@@ -19,7 +19,11 @@
 - medium article link:  : https://medium.com/@ayseleynavuz/calculator-app-auto-layout-in-storyboard-31c9d3588e01
 <img src="https://github.com/ayseleynavuz/ios-bootcamp/blob/main/odev5/odev5/screenshot/Simulator%20Screenshot%20-%20iPhone%2011%20-%202024-04-21%20at%2014.49.47.png" width="414" height="896">
 
-https://github.com/ayseleynavuz/ios-bootcamp/assets/58444323/f0056e22-a9b9-4631-a5e2-1554ba13916d
+https://github.com/ayseleynavuz/ios-bootcamp/assets/58444323/6cc1e0d7-5aab-49cb-9380-adfc9a1d7dd6
+
+
+
+
 
 
 
