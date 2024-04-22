@@ -11,14 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var labelShowNumber: UILabel!
     
-    
-    var firstNumber: Double = 0
-    var currentOperation: String = ""
-    var isTypingNumber = false
-    
-    var result = 0.0   // if double
-    var resultInt = 0  // if int
-    var resultIntToDouble = 0.0
+    var equationString = ""
+        
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,139 +22,104 @@ class ViewController: UIViewController {
     
     func clearAll()
     {
-        labelShowNumber.text = "0"
-        firstNumber = 0
-        currentOperation = ""
-        isTypingNumber = false
+        equationString = ""
     }
     
     @IBAction func buttonAllClear(_ sender: Any) {
         clearAll()
     }
     
-    // handle operation
-    func handleOperation(_ operation: String) {
-        if isTypingNumber {
-            firstNumber = Double(labelShowNumber.text!)!
-            isTypingNumber = false
+    func calculate(equation:String) -> Int {
+        let array = equation.split(separator: "+")
+        var sum = 0
+        print(array)
+        for n in array {
+            if let value = Int(n) {
+                sum += value
+             }else {
+                 print("Girilen veri hatalı")
+             }
+            print(sum)
         }
-        currentOperation = operation
+        return sum
     }
-    
-    // performOperation
-    func performOperation(firstNumber: Double, secondNumber: Double, operation: String) -> Double {
-        switch operation {
-        case "+":
-            return firstNumber + secondNumber
-        case "-":
-            return firstNumber - secondNumber
-        case "*":
-            return firstNumber * secondNumber
-        case "/":
-            return firstNumber / secondNumber
-        default:
-            return 0
-        }
-    }
-
-    func appendDigitToNumber(digit: String) {
-        if isTypingNumber {
-            labelShowNumber.text! += digit
-        } else {
-            labelShowNumber.text! = digit
-            isTypingNumber = true
-        }
-    }
-    
-    
-    
     @IBAction func buttonEquals(_ sender: Any) {
-          if isTypingNumber {
-              let secondNumber = Double(labelShowNumber.text!)!
-              let result = performOperation(firstNumber: firstNumber, secondNumber: secondNumber, operation: currentOperation)
-              
-              let resultInt = Int(result)
-              let resultIntToDouble = Double(resultInt)
-              
-              if result == resultIntToDouble {
-                  labelShowNumber.text = String(resultInt)
-              } else {
-                  labelShowNumber.text = String(result)
-              }
-              
-              firstNumber = result
-              isTypingNumber = false
-          }
-      }
-
-    
-    // + plus operation
-    @IBAction func buttonPlus(_ sender: Any) {
-        handleOperation("+")
+        let result = calculate(equation: equationString)
+        labelShowNumber.text = String(result)
+        equationString = ""
+        print("\(equationString) ff")
     }
-    // percent tap - %
+    
+    
+    @IBAction func buttonPlus(_ sender: Any) {
+        equationString.append("+")
+        labelShowNumber.text = equationString
+    }
+    
+
     @IBAction func buttonPercent(_ sender: Any) {
-        
     }
 
     @IBAction func buttonDivide(_ sender: Any) {
-        handleOperation("/")
     }
     
     @IBAction func buttonDecimal(_ sender: Any) {
-        if !labelShowNumber.text!.contains(",") {
-            labelShowNumber.text! += ","
-            isTypingNumber = true
-        }
     }
     @IBAction func buttonMinus(_ sender: Any) {
-        handleOperation("-")
+       
     }
     @IBAction func buttonTimes(_ sender: Any) {
-        handleOperation("*")
+       
     }
 
-
     @IBAction func buttonZero(_ sender: Any) {
-        appendDigitToNumber(digit: "0")
+        equationString.append("0")
+        labelShowNumber.text = equationString
     }
     
     @IBAction func buttonOne(_ sender: Any) {
-        appendDigitToNumber(digit: "1")
+        //appendDigitToNumber(digit: "1")
+        equationString.append("1")
+        labelShowNumber.text = equationString
     }
     
     @IBAction func buttonTwo(_ sender: Any) {
-        appendDigitToNumber(digit: "2")
+        equationString.append("2")
+        labelShowNumber.text = equationString
     }
     
     @IBAction func buttonThree(_ sender: Any) {
-        appendDigitToNumber(digit: "3")
+        equationString.append("3")
+        labelShowNumber.text = equationString
     }
     
     @IBAction func buttonFour(_ sender: Any) {
-        appendDigitToNumber(digit: "4")
+        equationString.append("4")
+        labelShowNumber.text = equationString
     }
 
     @IBAction func buttonFive(_ sender: Any) {
-        appendDigitToNumber(digit: "5")
+        equationString.append("5")
+        labelShowNumber.text = equationString
     }
     @IBAction func buttonSix(_ sender: Any) {
-        appendDigitToNumber(digit: "6")
+        equationString.append("6")
+        labelShowNumber.text = equationString
     }
     
     @IBAction func buttonSeven(_ sender: Any) {
-        appendDigitToNumber(digit: "7")
+        equationString.append("7")
+        labelShowNumber.text = equationString
     }
     
     @IBAction func buttonEight(_ sender: Any) {
-        appendDigitToNumber(digit: "8")
+        equationString.append("8")
+        labelShowNumber.text = equationString
     }
     @IBAction func buttonNine(_ sender: Any) {
-        appendDigitToNumber(digit: "9")
+        equationString.append("9")
+        labelShowNumber.text = equationString
     }
-    
-    
-    
     
 }
 
