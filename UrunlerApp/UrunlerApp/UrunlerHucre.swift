@@ -7,8 +7,28 @@
 
 import UIKit
 
-class UrunlerHucre: UITableViewCell {
+// protocol
+// tetikleyen taraf -> hucre , kullanan taraf -> Anasayfa
+// 
 
+protocol HucreProtocol {
+    func sepeteEkleTiklandi(indexPath : IndexPath)
+}
+
+class UrunlerHucre: UITableViewCell {
+    @IBOutlet weak var hucreArkaplan: UIView!
+    
+    @IBOutlet weak var imageViewUrun: UIImageView!
+    
+    @IBOutlet weak var labelUrunAd: UILabel!
+    
+    @IBOutlet weak var labelUrunFiyat: UILabel!
+    
+    // bu nesneyi dışarıdan istiyoruz
+    var hucreProtocol : HucreProtocol?
+    var indexpath : IndexPath?
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,7 +37,11 @@ class UrunlerHucre: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
-
+    
+    @IBAction func buttonSepeteEkle(_ sender: Any) {
+        hucreProtocol?.sepeteEkleTiklandi(indexPath: indexpath!)
+    }
+    
+    
 }
