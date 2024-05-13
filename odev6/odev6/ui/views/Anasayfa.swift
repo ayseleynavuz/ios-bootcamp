@@ -109,9 +109,6 @@ class Anasayfa: UIViewController {
 
 }
 
-
-
-
 extension Anasayfa : UICollectionViewDataSource,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return liste.count
