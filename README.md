@@ -22,6 +22,9 @@
 https://github.com/ayseleynavuz/ios-bootcamp/assets/58444323/6cc1e0d7-5aab-49cb-9380-adfc9a1d7dd6
 
 
+# Odev 6
+- Simple ui design
+<img width="339" alt="Ekran Resmi 2024-05-10 15 52 28" src="https://github.com/ayseleynavuz/ios-bootcamp/assets/58444323/44f2520e-f1db-4d6f-b9fa-3a7ea35f1a5b">
 
 
 
