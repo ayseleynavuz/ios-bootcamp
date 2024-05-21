@@ -9,8 +9,6 @@ import UIKit
 
 class TodoDetay: UIViewController {
     
-    
-    
     @IBOutlet weak var tfTodoName: UITextField!
     
     
@@ -32,6 +30,12 @@ class TodoDetay: UIViewController {
     @IBAction func buttonUpdate(_ sender: Any) {
         if let tn = tfTodoName.text, let t = todo{
             viewModel.update(todo_id: t.todo_id!, todo_name: tn)
+            
+            self.view.showToast(message: "todo updated.")
+                  DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                      self.navigationController?.popViewController(animated: true)
+                  }
+           
         }
     }
     

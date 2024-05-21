@@ -23,6 +23,15 @@ class TodoKayit: UIViewController {
     @IBAction func buttonSave(_ sender: Any) {
          if let t = tfTodoName.text{
              viewModel.save(todo_name: t)
+             
+             self.view.showToast(message: "new todo added.")
+                   
+                   // Toast mesajı gösterildikten sonra işlem tamamlandıktan bir süre sonra geri dönecek
+                   DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                       self.navigationController?.popViewController(animated: true)
+                   }
+            
+             
          }
      }
     
