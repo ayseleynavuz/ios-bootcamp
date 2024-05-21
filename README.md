@@ -27,6 +27,18 @@ https://github.com/ayseleynavuz/ios-bootcamp/assets/58444323/6cc1e0d7-5aab-49cb-
 <img width="339" alt="Ekran Resmi 2024-05-10 15 52 28" src="https://github.com/ayseleynavuz/ios-bootcamp/assets/58444323/44f2520e-f1db-4d6f-b9fa-3a7ea35f1a5b">
 
 
+# Odev 7 - Todo App
+🛠️ Technologies Used:
+- SQLite
+- MVVM Design Pattern
+- RxSwift
+- Toast Message
+
+https://github.com/ayseleynavuz/ios-bootcamp/assets/58444323/2e6e9149-120e-41da-b97a-f254d1488f16
+
+
+
+
 
 
 
